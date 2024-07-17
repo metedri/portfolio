@@ -30,6 +30,7 @@ const LinkToTheProgect = styled.a`
 `
 
 const ProjectCover = styled.img`
-    max-height: 510px;
-    max-width: 936.24px;
+    height: 510px;
+    width: 936.24px;
+    object-fit: cover;
 `
