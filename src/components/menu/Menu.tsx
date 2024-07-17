@@ -26,8 +26,11 @@ export const Menu = () => {
 };
 
 const StyledMenu = styled.nav`
+    margin: auto;
     ul {
         display: flex;
-        gap: 30px;
+        gap: 150px;
+        /* align-items: center; */
+        /* justify-content: space-between; */
     }
 `
