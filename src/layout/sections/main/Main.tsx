@@ -9,13 +9,15 @@ export const Main = () => {
             <FlexWrapper align={"center"} justify={"space-between"}>
                 <Name>Alla Demina</Name>
                 <div>
-                <h1>Frontend Developer</h1>
-                <span>32 years old, Moscow</span>
+                    <h1>Frontend Developer</h1>
+                    <span>32 years old, Moscow</span>
                 </div>
-                <a href="">RU</a>
-                <a href="">ENG</a>
+                <LangSelection>
+                    <a href="">RU</a>
+                    <a href="">ENG</a>
+                </LangSelection>
             </FlexWrapper>
-            <Photo src={photo}/>
+            <Photo src={photo} />
         </StyledMain>
     );
 };
@@ -32,4 +34,9 @@ const Photo = styled.img`
 `
 const Name = styled.h2`
     font-size: 47.34px;
+`
+
+const LangSelection = styled.div`
+    display: flex;
+    gap: 5px;
 `
