@@ -23,8 +23,9 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-    min-height: 100vh;
     background-color: #818181;
+    max-width: 945px;
+    margin: 0 auto;
 `
 
 const Photo = styled.img`
@@ -39,4 +40,5 @@ const Name = styled.h2`
 const LangSelection = styled.div`
     display: flex;
     gap: 5px;
+    transform: rotate(-90deg);
 `

@@ -23,6 +23,7 @@ const StyledPortfolioItem = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 937px;
 `
 
 const LinkToTheProgect = styled.a`
