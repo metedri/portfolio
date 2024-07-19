@@ -7,7 +7,7 @@ export const Contacts = () => {
     return (
         <StyledContacts>
             <SectionTitle>Contacts</SectionTitle>
-            <p>Want to know more or just chat?<br></br>You are welcome!</p>
+            <p>Want to know more or just chat?<br/>You are welcome!</p>
             <StyledButton>Send message</StyledButton>
             <SocialList>
                 <SocialItem>
@@ -31,7 +31,7 @@ export const Contacts = () => {
                     </SocialIconLink>
                 </SocialItem>
             </SocialList>
-            <p>Like me on<br></br>LinkedIn, Telegram, Instagram, VK</p>
+            <p>Like me on<br/>LinkedIn, Telegram, Instagram, VK</p>
         </StyledContacts>
     )
 }
@@ -49,11 +49,10 @@ const StyledButton = styled.button`
     height: 42px;
     background-color: #070707;
     color: #FFFFFF;
-    border: none;
     border-radius: 50px;
     font-size: 18px;
-    cursor: pointer;
 `
+
 const SocialList = styled.ul`
     margin-top: 20px;
     display: flex;

@@ -8,13 +8,13 @@ export const Main = () => {
         <StyledMain>
             <FlexWrapper align={"center"} justify={"space-between"}>
                 <Name>Alla Demina</Name>
-                <div>
+                <MainTitle>
                     <h1>Frontend Developer</h1>
                     <span>32 years old, Moscow</span>
-                </div>
+                </MainTitle>
                 <LangSelection>
-                    <a href="">RU</a>
-                    <a href="">ENG</a>
+                    <ButtonLang>RU</ButtonLang>
+                    <ButtonLang>ENG</ButtonLang>
                 </LangSelection>
             </FlexWrapper>
             <Photo src={photo} />
@@ -37,8 +37,15 @@ const Name = styled.h2`
     font-size: 47.34px;
 `
 
+const MainTitle = styled.div`
+    
+`
+
 const LangSelection = styled.div`
     display: flex;
     gap: 5px;
     transform: rotate(-90deg);
+`
+const ButtonLang = styled.button`
+    
 `
