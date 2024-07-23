@@ -23,8 +23,17 @@ export const AboutMe = () => {
 
 const StyledAboutMe = styled.section`
     min-height: 506px;
+    
 `
 const StyledAboutMeDiscription = styled.div`
-    text-align: center;
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    gap: 2rem;
     max-width: 485.34px;
+    
+
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
 `

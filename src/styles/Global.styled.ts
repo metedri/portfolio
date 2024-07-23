@@ -41,4 +41,8 @@ export const GlobalStyle = createGlobalStyle`
     section:nth-of-type(odd) {
         background-color: ${theme.colors.secondaryBg};
     }
+
+    section {
+        padding: 100px 0;
+    }
 `

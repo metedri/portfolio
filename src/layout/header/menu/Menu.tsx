@@ -51,7 +51,6 @@ const ListItem = styled.li`
 
 `
 const Link = styled.a`
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: ${theme.colors.fontLite};
     font-weight: 600;
