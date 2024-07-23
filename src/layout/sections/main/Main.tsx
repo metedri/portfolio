@@ -2,30 +2,31 @@ import React from "react";
 import styled from "styled-components";
 import photo from "../../../assets/images/main_foto.webp"
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { Container } from "../../../components/Container";
+import { theme } from "../../../styles/Theme";
 
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper align={"center"} justify={"space-between"}>
-                <Name>Alla Demina</Name>
-                <MainTitle>
-                    <h1>Frontend Developer</h1>
-                    <span>32 years old, Moscow</span>
-                </MainTitle>
-                <LangSelection>
-                    <ButtonLang>RU</ButtonLang>
-                    <ButtonLang>ENG</ButtonLang>
-                </LangSelection>
-            </FlexWrapper>
-            <Photo src={photo} />
+            <Container>
+                <FlexWrapper align={"center"} justify={"space-between"}>
+                    <Name>Denis Novik</Name>
+                    <MainTitle>
+                        <h1>UX | UI designer</h1>
+                        <span>24 years old, Minsk</span>
+                    </MainTitle>
+                    <LangSelection>
+                        <ButtonLang>RU</ButtonLang>
+                        <ButtonLang>ENG</ButtonLang>
+                    </LangSelection>
+                </FlexWrapper>
+                <Photo src={photo} />
+            </Container>
         </StyledMain>
     );
 };
 
 const StyledMain = styled.div`
-    background-color: #818181;
-    max-width: 945px;
-    margin: 0 auto;
 `
 
 const Photo = styled.img`
@@ -45,6 +46,8 @@ const LangSelection = styled.div`
     display: flex;
     gap: 5px;
     transform: rotate(-90deg);
+    
+    
 `
 const ButtonLang = styled.button`
     

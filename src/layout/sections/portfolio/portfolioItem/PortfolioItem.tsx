@@ -19,7 +19,6 @@ export const PortfolioItem = (props: PortfolioItemPropsType) => {
 };
 
 const StyledPortfolioItem = styled.div`
-    background-color: #ff8ed9;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +26,7 @@ const StyledPortfolioItem = styled.div`
 `
 
 const LinkToTheProgect = styled.a`
-    color: black;
+
 `
 
 const ProjectCover = styled.img`

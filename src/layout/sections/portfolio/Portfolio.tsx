@@ -6,9 +6,10 @@ import progect1 from "../../../assets/images/progect_1.webp"
 import progect2 from "../../../assets/images/progect_2.webp"
 import progect3 from "../../../assets/images/progect_3.webp"
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { Container } from "../../../components/Container";
 
 
- const data = [
+const data = [
     {
         name: "Online fashion store - Homepage",
         src: progect1,
@@ -21,7 +22,7 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
         name: "Braun Landing Page - Concept",
         src: progect3,
     }
- ]
+]
 
 type DataType = {
     name: string
@@ -31,18 +32,20 @@ type DataType = {
 export const Portfolio = () => {
     return (
         <StyledPortfolio>
-            <SectionTitle>Portfolio</SectionTitle>
-            <FlexWrapper direction={"column"} align={"center"}>
-            {data.map((item: DataType) => {
-                return (
-                    <PortfolioItem coverSrc={item.src} linkName={item.name}/>
-                )
-            })}
-            </FlexWrapper>
+            <Container>
+                <SectionTitle>Portfolio</SectionTitle>
+                <FlexWrapper direction={"column"} align={"center"}>
+                    {data.map((item: DataType) => {
+                        return (
+                            <PortfolioItem coverSrc={item.src} linkName={item.name} />
+                        )
+                    })}
+                </FlexWrapper>
+            </Container>
         </StyledPortfolio>
     );
 };
 
 const StyledPortfolio = styled.section`
-    background-color: #ffcbee;
+
 `
