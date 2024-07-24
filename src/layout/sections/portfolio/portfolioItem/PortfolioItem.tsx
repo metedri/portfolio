@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import progect1 from "../../../../assets/images/progect_1.webp"
+import { FlexWrapper } from "../../../../components/FlexWrapper";
+import { theme } from "../../../../styles/Theme";
 
 
 type PortfolioItemPropsType = {
@@ -12,25 +14,33 @@ type PortfolioItemPropsType = {
 export const PortfolioItem = (props: PortfolioItemPropsType) => {
     return (
         <StyledPortfolioItem>
-            <ProjectCover src={props.coverSrc || progect1}/>
-            <LinkToTheProgect href={props.linkHref || "#"}>{props.linkName}</LinkToTheProgect>
+            <FlexWrapper direction="column" align="center">
+                <ProjectCover src={props.coverSrc || progect1} />
+                <LinkToTheProgect href={props.linkHref || "#"}>{props.linkName}</LinkToTheProgect>
+            </FlexWrapper>
         </StyledPortfolioItem>
     );
 };
 
 const StyledPortfolioItem = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 937px;
+
 `
 
 const LinkToTheProgect = styled.a`
-    padding: 45px 0;
+    margin: 45px 0;
+    color: ${theme.colors.font};
+    text-decoration: underline;
+    font-weight: 500;
+
+    /* &:last-of-type {
+        margin: 45px 0 0;
+    } */
+
+    // ---------?
 `
 
 const ProjectCover = styled.img`
-    height: 510px;
-    width: 936.24px;
+    max-height: 510px;
+    max-width: 940px;
     object-fit: cover;
 `
