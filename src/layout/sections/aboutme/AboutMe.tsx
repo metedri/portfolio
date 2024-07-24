@@ -10,11 +10,9 @@ export const AboutMe = () => {
             <Container>
                 <SectionTitle>About me</SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"}>
-                    <StyledAboutMeDiscription>
-                        <p>Hi, I'm Denis – UX/UI designer from Minsk.<br />I'm interested in design and everything connected with it.</p>
-                        <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
-                        <p>Ready to implement excellent projects  with wonderful people.</p>
-                    </StyledAboutMeDiscription>
+                        <AboutMeDiscription>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</AboutMeDiscription>
+                        <AboutMeDiscription>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</AboutMeDiscription>
+                        <AboutMeDiscription>Ready to implement excellent projects  with wonderful people.</AboutMeDiscription>
                 </FlexWrapper>
             </Container>
         </StyledAboutMe>
@@ -22,18 +20,12 @@ export const AboutMe = () => {
 };
 
 const StyledAboutMe = styled.section`
-    min-height: 506px;
-    
-`
-const StyledAboutMeDiscription = styled.div`
-    display: flex;
-    padding-top: 1rem;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 485.34px;
-    
 
+`
+const AboutMeDiscription =styled.p`
     text-align: center;
     font-size: 18px;
-    font-style: normal;
+
+    padding-bottom: 1rem;
+    max-width: 490px;
 `

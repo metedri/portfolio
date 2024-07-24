@@ -37,8 +37,7 @@ const Photo = styled.img`
     max-width: 943px;
     max-height: 387px;
     object-fit: cover;
-
-
+    object-position: 0 45%;
 `
 const Name = styled.h2`
     max-width: 124px;

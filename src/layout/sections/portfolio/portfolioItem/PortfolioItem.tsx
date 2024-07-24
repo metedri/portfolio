@@ -26,7 +26,7 @@ const StyledPortfolioItem = styled.div`
 `
 
 const LinkToTheProgect = styled.a`
-
+    padding: 45px 0;
 `
 
 const ProjectCover = styled.img`
