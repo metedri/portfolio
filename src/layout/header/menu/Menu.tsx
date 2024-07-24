@@ -7,19 +7,19 @@ export const Menu = () => {
         <StyledMenu>
             <ul>
                 <ListItem>
-                    <Link href="">Home</Link>
+                    <Link href="#">Home</Link>
                 </ListItem>
                 <ListItem>
-                    <Link href="">About me</Link>
+                    <Link href="#">About me</Link>
                 </ListItem>
                 <ListItem>
-                    <Link href="">Skils</Link>
+                    <Link href="#">Skils</Link>
                 </ListItem>
                 <ListItem>
-                    <Link href="">Portfolio</Link>
+                    <Link href="#">Portfolio</Link>
                 </ListItem>
                 <ListItem>
-                    <Link href="">Contacts</Link>
+                    <Link href="#">Contacts</Link>
                 </ListItem>
             </ul>
         </StyledMenu>
@@ -27,7 +27,7 @@ export const Menu = () => {
 };
 
 const StyledMenu = styled.nav`
-    min-height: 88px;
+    min-height: 90px;
     border-bottom: 1px solid ${theme.colors.fontLite};
     display: flex;
     align-items: center;
@@ -42,8 +42,9 @@ const StyledMenu = styled.nav`
 
     @media screen and (max-width: 600px) {
     ul {
-        flex-direction: column;
-        align-items: center; 
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
     }}
 `
 

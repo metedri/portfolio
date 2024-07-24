@@ -7,25 +7,22 @@ import { Container } from "../../../components/Container";
 export const AboutMe = () => {
     return (
         <StyledAboutMe>
-            <Container>
                 <SectionTitle>About me</SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"}>
                         <AboutMeDiscription>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</AboutMeDiscription>
                         <AboutMeDiscription>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</AboutMeDiscription>
                         <AboutMeDiscription>Ready to implement excellent projects  with wonderful people.</AboutMeDiscription>
                 </FlexWrapper>
-            </Container>
         </StyledAboutMe>
     );
 };
 
 const StyledAboutMe = styled.section`
-
+    padding-bottom: 100px;
 `
 const AboutMeDiscription =styled.p`
     text-align: center;
     font-size: 18px;
-
     padding-bottom: 1rem;
     max-width: 490px;
 `

@@ -44,12 +44,12 @@ export const Contacts = () => {
 }
 
 const StyledContacts = styled.section`
-
+    padding-bottom: 100px;
 `
 
 const ContactDiscription = styled.p`
     max-width: 300px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     text-align: center;
     font-size: 18px;
     font-weight: 500;
@@ -57,8 +57,7 @@ const ContactDiscription = styled.p`
 `
 
 const StyledButton = styled.button`
-    width: 180.5px;
-    height: 42px;
+    padding: 13px 29px;
     border-radius: 50px;
     background-color: ${theme.colors.font};
     color: ${theme.colors.primaryBg};
@@ -68,12 +67,16 @@ const StyledButton = styled.button`
 const SocialList = styled.ul`
     margin: 80px 0 45px;
     display: flex;
-    gap: 62px;
+    gap: 60px;
     justify-content: center;
+
+    @media screen and (max-width: 370px) {
+        gap: 30px;
+    }
 `
 
 const SocialItem = styled.li`
-    
+
 `
 
 const SocialIconLink = styled.a`

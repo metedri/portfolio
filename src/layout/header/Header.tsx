@@ -16,5 +16,5 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    min-height: 88px;
+    
 `

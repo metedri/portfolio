@@ -22,25 +22,28 @@ export const PortfolioItem = (props: PortfolioItemPropsType) => {
     );
 };
 
+
 const StyledPortfolioItem = styled.div`
 
-`
-
-const LinkToTheProgect = styled.a`
-    margin: 45px 0;
-    color: ${theme.colors.font};
-    text-decoration: underline;
-    font-weight: 500;
-
-    /* &:last-of-type {
-        margin: 45px 0 0;
-    } */
-
-    // ---------?
 `
 
 const ProjectCover = styled.img`
     max-height: 510px;
     max-width: 940px;
     object-fit: cover;
+
+    @media (max-width: 940px) {
+        max-width: 100%;
+    }
+    @media (max-width: 480px) {
+        max-width: 100%;
+    }
 `
+
+const LinkToTheProgect = styled.a`
+    margin: 45px 0 100px;
+    color: ${theme.colors.font};
+    text-decoration: underline;
+    font-weight: 500;
+`
+

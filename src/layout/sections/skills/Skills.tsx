@@ -24,5 +24,5 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-
+    padding-bottom: 100px;
 `

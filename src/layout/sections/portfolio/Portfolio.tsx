@@ -35,9 +35,9 @@ export const Portfolio = () => {
             <Container>
                 <SectionTitle>Portfolio</SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"}>
-                    {data.map((item: DataType) => {
+                    {data.map((item: DataType, index) => {
                         return (
-                            <PortfolioItem coverSrc={item.src} linkName={item.name} />
+                            <PortfolioItem coverSrc={item.src} linkName={item.name}  />
                         )
                     })}
                 </FlexWrapper>

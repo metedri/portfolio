@@ -43,6 +43,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     section {
-        padding: 100px 0;
+        padding-top: 100px;
     }
 `
