@@ -3,6 +3,7 @@ import styled from "styled-components";
 import progect1 from "../../../../assets/images/progect_1.webp"
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { theme } from "../../../../styles/Theme";
+import { font } from "../../../../styles/Common";
 
 
 type PortfolioItemPropsType = {
@@ -36,8 +37,11 @@ const ProjectCover = styled.img`
 
 const LinkToTheProgect = styled.a`
     margin: 45px 0 100px;
-    color: ${theme.colors.font};
     text-decoration: underline;
-    font-weight: 500;
+    ${font({weight: 500, color: theme.colors.font, fmax: 16, fmin: 14})}
+
+    @media ${theme.media.mobile} {
+        margin: 25px 0 50px;
+        }
 `
 

@@ -1,14 +1,12 @@
 import styled from "styled-components";
+import { font } from "../styles/Common";
 
 type SectionTitlePropsType = {
     
 }
 
 export const SectionTitle = styled.h2<SectionTitlePropsType>`
+    ${font({weight: 700, fmax: 34, fmin: 28})}
     text-align: center;
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 42px;
-
     margin-bottom: 45px;
 `

@@ -1,19 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Icon } from "../../../components/icon/Icon";
 import { Container } from "../../../components/Container";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { theme } from "../../../styles/Theme";
+import { font } from "../../../styles/Common";
+import { StyledButton } from "../../../components/StyledButton";
+import { FormMessage } from "./formMessage/FormMessage";
 
-export const Contacts = () => {
+export const Contacts: React.FC = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
     return (
         <StyledContacts>
             <Container>
                 <FlexWrapper direction="column" align="center">
                     <SectionTitle>Contacts</SectionTitle>
                     <ContactDiscription>Want to know more or just chat? You are welcome!</ContactDiscription>
-                    <StyledButton>Send message</StyledButton>
+                    <FormMessage isOpen={isModalOpen} onClose={closeModal}>
+                    </FormMessage>
+                    <StyledButton onClick={openModal}>Send message</StyledButton>
                     <SocialList>
                         <SocialItem>
                             <SocialIconLink href="">
@@ -37,6 +52,7 @@ export const Contacts = () => {
                         </SocialItem>
                     </SocialList>
                     <ContactWithMe>Like me on<br />LinkedIn, Telegram, Instagram, VK</ContactWithMe>
+                    
                 </FlexWrapper>
             </Container>
         </StyledContacts>
@@ -44,24 +60,14 @@ export const Contacts = () => {
 }
 
 const StyledContacts = styled.section`
-    padding-bottom: 100px;
+
 `
 
 const ContactDiscription = styled.p`
     max-width: 300px;
     padding-bottom: 30px;
     text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21px;
-`
-
-const StyledButton = styled.button`
-    padding: 13px 29px;
-    border-radius: 50px;
-    background-color: ${theme.colors.font};
-    color: ${theme.colors.primaryBg};
-    font-size: 18px;
+    ${font({weight: 500, lineHeight: 1.4, fmax: 18, fmin: 14})}
 `
 
 const SocialList = styled.ul`
@@ -70,8 +76,8 @@ const SocialList = styled.ul`
     gap: 60px;
     justify-content: center;
 
-    @media screen and (max-width: 576px) {
-        gap: 30px;
+    @media ${theme.media.mobile} {
+        gap: 40px;
     }
 `
 
@@ -88,7 +94,7 @@ position: relative;
     width: 50px;
     height: 50px;
     border-bottom: 2px solid ${theme.colors.font};
-    /* border-radius: 10px; */
+    border-radius: 10px;
     transform: translateY(-5px) translateX(-5px);
     position: absolute;
 }  
@@ -96,6 +102,5 @@ position: relative;
 
 const ContactWithMe = styled.p`
     text-align: center;
-    font-size: 14px;
-    color: ${theme.colors.fontLite};
+    ${font({color:theme.colors.fontLite, fmax: 14, fmin: 12})}
 `

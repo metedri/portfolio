@@ -18,11 +18,11 @@ export const AboutMe = () => {
 };
 
 const StyledAboutMe = styled.section`
-    padding-bottom: 100px;
+
 `
 const AboutMeDiscription =styled.p`
     text-align: center;
     font-size: 18px;
-    padding: 0 15px 1rem;
+    padding: 0 15px 1em;
     max-width: 490px;
 `

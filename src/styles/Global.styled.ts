@@ -44,6 +44,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     section {
-        padding-top: 100px;
+        padding: 100px 0;
+
+        @media ${theme.media.mobile} {
+            padding: 50px 0;
+        }
     }
 `

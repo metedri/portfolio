@@ -4,6 +4,7 @@ import photo from "../../../assets/images/main_foto.webp"
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
+import { font } from "../../../styles/Common";
 
 export const Main = () => {
     return (
@@ -30,6 +31,10 @@ export const Main = () => {
 
 const StyledMain = styled.div`
     padding-bottom: 100px;
+
+    @media ${theme.media.mobile} {
+            padding-bottom: 50px;
+        }
 `
 
 const MainDiscription = styled.div`
@@ -37,23 +42,13 @@ const MainDiscription = styled.div`
 `
 
 const Name = styled.h2`
+    ${font({weight: 700, fmax: 50, fmin: 36})}
     max-width: 124px;
-    font-size: 47px;
-    font-weight: 700;
-    @media (max-width: 390px) {
-        font-size: 36px;
-    }
 `
 
 const MainTitle = styled.div`
     h1, span {
-        font-size: 18px;
-        font-style: normal;
-        font-weight: normal;
-
-        @media (max-width: 390px) {
-            font-size: 16px;
-        }
+        ${font({fmax: 18, fmin: 14})}
     }
 `
 
@@ -92,6 +87,10 @@ const Photo = styled.img`
     max-height: 387px;
     object-fit: cover;
     object-position: 0 45%;
+
+    @media ${theme.media.mobile} {
+        max-height: 287px;
+    }
 `
 
 

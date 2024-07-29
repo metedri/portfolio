@@ -7,6 +7,7 @@ import progect2 from "../../../assets/images/progect_2.webp"
 import progect3 from "../../../assets/images/progect_3.webp"
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
+import { theme } from "../../../styles/Theme";
 
 
 const data = [
@@ -47,5 +48,9 @@ export const Portfolio = () => {
 };
 
 const StyledPortfolio = styled.section`
+    padding: 100px 0 0;
 
+    @media ${theme.media.mobile} {
+        padding: 50px 0 0;
+    }
 `
