@@ -6,4 +6,9 @@ export const theme ={
         font: '#070707',
         fontLite: '#828282',
     },
+
+    media: {
+        tablet: "screen and (max-width: 760px)",
+        mobile: "screen and (max-width: 576px)"
+    }
 }

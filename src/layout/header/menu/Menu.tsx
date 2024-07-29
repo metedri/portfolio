@@ -32,7 +32,6 @@ const StyledMenu = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     
     ul {
         display: flex;
@@ -40,12 +39,9 @@ const StyledMenu = styled.nav`
         width: 100%;
     }
 
-    @media screen and (max-width: 600px) {
-    ul {
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }}
+    @media ${theme.media.tablet} {
+    display: none;
+    }
 `
 
 const ListItem = styled.li`

@@ -30,14 +30,8 @@ const StyledPortfolioItem = styled.div`
 const ProjectCover = styled.img`
     max-height: 510px;
     max-width: 940px;
+    width: 100%;
     object-fit: cover;
-
-    @media (max-width: 940px) {
-        max-width: 100%;
-    }
-    @media (max-width: 480px) {
-        max-width: 100%;
-    }
 `
 
 const LinkToTheProgect = styled.a`

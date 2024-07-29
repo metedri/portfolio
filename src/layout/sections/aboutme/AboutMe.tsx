@@ -23,6 +23,6 @@ const StyledAboutMe = styled.section`
 const AboutMeDiscription =styled.p`
     text-align: center;
     font-size: 18px;
-    padding-bottom: 1rem;
+    padding: 0 15px 1rem;
     max-width: 490px;
 `

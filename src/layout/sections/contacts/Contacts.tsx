@@ -70,7 +70,7 @@ const SocialList = styled.ul`
     gap: 60px;
     justify-content: center;
 
-    @media screen and (max-width: 370px) {
+    @media screen and (max-width: 576px) {
         gap: 30px;
     }
 `
