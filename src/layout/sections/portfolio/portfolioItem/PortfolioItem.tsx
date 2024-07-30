@@ -33,15 +33,17 @@ const ProjectCover = styled.img`
     max-width: 940px;
     width: 100%;
     object-fit: cover;
+    margin-bottom: 45px;
+
+    @media ${theme.media.mobile} {
+        margin-bottom: 25px;
+    }
 `
 
 const LinkToTheProgect = styled.a`
-    margin: 45px 0 100px;
     text-decoration: underline;
     ${font({weight: 500, color: theme.colors.font, fmax: 16, fmin: 14})}
 
-    @media ${theme.media.mobile} {
-        margin: 25px 0 50px;
-        }
+    
 `
 

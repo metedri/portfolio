@@ -6,7 +6,7 @@ import { Container } from "../../../components/Container";
 
 export const AboutMe = () => {
     return (
-        <StyledAboutMe>
+        <StyledAboutMe id="section2">
                 <SectionTitle>About me</SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"}>
                         <AboutMeDiscription>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</AboutMeDiscription>

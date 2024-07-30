@@ -32,10 +32,10 @@ type DataType = {
 
 export const Portfolio = () => {
     return (
-        <StyledPortfolio>
+        <StyledPortfolio id="section4">
             <Container>
                 <SectionTitle>Portfolio</SectionTitle>
-                <FlexWrapper direction={"column"} align={"center"}>
+                <FlexWrapper direction={"column"} align={"center"} gap="100px">
                     {data.map((item: DataType, index) => {
                         return (
                             <PortfolioItem coverSrc={item.src} linkName={item.name}  />
@@ -48,9 +48,9 @@ export const Portfolio = () => {
 };
 
 const StyledPortfolio = styled.section`
-    padding: 100px 0 0;
-
     @media ${theme.media.mobile} {
-        padding: 50px 0 0;
+        & > div > div {
+            gap: 50px;
+        }
     }
 `

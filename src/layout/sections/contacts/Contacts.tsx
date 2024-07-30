@@ -21,7 +21,7 @@ export const Contacts: React.FC = () => {
   };
 
     return (
-        <StyledContacts>
+        <StyledContacts id="section5">
             <Container>
                 <FlexWrapper direction="column" align="center">
                     <SectionTitle>Contacts</SectionTitle>
