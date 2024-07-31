@@ -1,49 +1,40 @@
-import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import { theme } from "../../../styles/Theme";
 
-export const MobileMenu = () => {
-    const [menuIsOpen, setMenuIsOpen] = useState(false)
-    const onBurgerBtnClick = () => {
-        setMenuIsOpen(!menuIsOpen)
+// -- Menu
+
+const Link = styled.a`
+    font-size: 18px;
+    color: ${theme.colors.fontLite};
+    font-weight: 600;
+
+    &:hover {
+        color: ${theme.colors.font};
     }
 
-    return (
-        <StyledMobileMenu>
-            <BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
-                <span></span>
-            </BurgerButton>
-            <MobileMenuPopup isOpen={menuIsOpen} onClick={() => {setMenuIsOpen(false)}}>
-                <ul>
-                    <ListItem>
-                        <Link href="#section1">Home</Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link href="#section2">About me</Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link href="#section3">Skils</Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link href="#section4">Portfolio</Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link href="#section5">Contacts</Link>
-                    </ListItem>
-                </ul>
-            </MobileMenuPopup>
-        </StyledMobileMenu>
-    );
-};
+    @media ${theme.media.mobile} {
+        font-size: 24px;
+    }
+`
+// -- Desktop Menu
+
+const StyledDesktopMenu = styled.nav`
+    min-height: 90px;
+    border-bottom: 1px solid ${theme.colors.fontLite};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+`
+// -- Mobile Menu
 
 const StyledMobileMenu = styled.nav`
-    display: none;
-
-    @media ${theme.media.tablet} {
-        display: block;
-        min-height: 50px;
-
-    }
+    min-height: 50px;
 `
 
 const MobileMenuPopup = styled.div<{isOpen:boolean}>`
@@ -125,15 +116,10 @@ const BurgerButton = styled.button<{isOpen:boolean}>`
     }
 `
 
-const ListItem = styled.li`
-
-`
-const Link = styled.a`
-    font-size: 36px;
-    color: ${theme.colors.fontLite};
-    font-weight: 600;
-
-    &:hover {
-        color: ${theme.colors.font};
-    }
-`
+export const S = {
+    Link,
+    StyledDesktopMenu,
+    StyledMobileMenu,
+    MobileMenuPopup,
+    BurgerButton,
+}
