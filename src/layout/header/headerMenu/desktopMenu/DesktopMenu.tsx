@@ -10,9 +10,9 @@ type MenuItemPropsType = {
 
 export const DesktopMenu: React.FC<MenuItemPropsType> = (props) => {
     return (
-        <S.StyledDesktopMenu>
+        <S.DesktopMenu>
             <Menu items={props.menuItems}/>
-        </S.StyledDesktopMenu>
+        </S.DesktopMenu>
     );
 };
 

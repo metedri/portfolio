@@ -18,7 +18,7 @@ const Link = styled.a`
 `
 // -- Desktop Menu
 
-const StyledDesktopMenu = styled.nav`
+const DesktopMenu = styled.nav`
     min-height: 90px;
     border-bottom: 1px solid ${theme.colors.fontLite};
     display: flex;
@@ -33,7 +33,7 @@ const StyledDesktopMenu = styled.nav`
 `
 // -- Mobile Menu
 
-const StyledMobileMenu = styled.nav`
+const MobileMenu = styled.nav`
     min-height: 50px;
 `
 
@@ -118,8 +118,8 @@ const BurgerButton = styled.button<{isOpen:boolean}>`
 
 export const S = {
     Link,
-    StyledDesktopMenu,
-    StyledMobileMenu,
+    DesktopMenu,
+    MobileMenu,
     MobileMenuPopup,
     BurgerButton,
 }

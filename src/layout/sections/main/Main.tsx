@@ -6,7 +6,7 @@ import { S } from "./Main_Styles";
 
 export const Main: React.FC = () => {
     return (
-        <S.Main id="section1">
+        <S.Main id="home">
             <Container>
                 <S.MainDiscription>
                     <FlexWrapper justify='space-between' align='center'>

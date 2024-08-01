@@ -8,26 +8,26 @@ export const items: MenuItemType[] = [
     {
         eng: "Home",
         ru: "Главная",
-        href: "#section1",
+        href: "#home",
     },
     {
         eng: "About me",
         ru: "Обо мне",
-        href: "#section2",
+        href: "#aboutme",
     },
     {
         eng: "Skills",
-        ru: "",
-        href: "#section3",
+        ru: "Навыки",
+        href: "#skills",
     },
     {
         eng: "Portfolio",
         ru: "Портфолио",
-        href: "#section4",
+        href: "#portfolio",
     },
     {
         eng: "Contacts",
         ru: "Контакты",
-        href: "#section5",
+        href: "#contacts",
     },
 ];

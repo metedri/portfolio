@@ -16,14 +16,14 @@ export const MobileMenu: React.FC<MenuItemPropsType> = (props) => {
     }
 
     return (
-        <S.StyledMobileMenu>
+        <S.MobileMenu>
             <S.BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
                 <span></span>
             </S.BurgerButton>
             <S.MobileMenuPopup isOpen={menuIsOpen} onClick={() => {setMenuIsOpen(false)}}>
                <Menu items={props.menuItems}/>
             </S.MobileMenuPopup>
-        </S.StyledMobileMenu>
+        </S.MobileMenu>
     );
 };
 

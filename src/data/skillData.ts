@@ -4,7 +4,7 @@ export type SkillDataType = {
     descriptionEng: string;
 };
 
-export const skill: SkillDataType[] = [
+export const skills: SkillDataType[] = [
     {
         iconID: "code",
         title: "HTML5",

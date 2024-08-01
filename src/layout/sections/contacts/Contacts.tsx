@@ -6,6 +6,7 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { StyledButton } from "../../../components/StyledButton";
 import { FormMessage } from "./formMessage/FormMessage";
 import { S } from "./Contacts_Styles";
+import {socials} from "../../../data/socials";
 
 export const Contacts: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,7 +20,7 @@ export const Contacts: React.FC = () => {
   };
 
     return (
-        <S.Contacts id="section5">
+        <S.Contacts id="contacts">
             <Container>
                 <FlexWrapper direction="column" align="center">
                     <SectionTitle>Contacts</SectionTitle>
@@ -28,29 +29,16 @@ export const Contacts: React.FC = () => {
                     </FormMessage>
                     <StyledButton onClick={openModal}>Send message</StyledButton>
                     <S.SocialList>
-                        <S.SocialItem>
-                            <S.SocialIconLink href="">
-                                <Icon height={"40"} width={"40"} iconID={"linkedin"} />
-                            </S.SocialIconLink>
-                        </S.SocialItem>
-                        <S.SocialItem>
-                            <S.SocialIconLink href="">
-                                <Icon height={"40"} width={"40"} iconID={"telegram"} />
-                            </S.SocialIconLink>
-                        </S.SocialItem>
-                        <S.SocialItem>
-                            <S.SocialIconLink href="">
-                                <Icon height={"40"} width={"40"} iconID={"instagram"} />
-                            </S.SocialIconLink>
-                        </S.SocialItem>
-                        <S.SocialItem>
-                            <S.SocialIconLink href="">
-                                <Icon height={"40"} width={"40"} iconID={"vk"} />
-                            </S.SocialIconLink>
-                        </S.SocialItem>
+                        {socials.map((item, index) => {
+                            return(
+                            <S.SocialItem key={index}>
+                                <S.SocialIconLink href={item.href}>
+                                    <Icon height={"40"} width={"40"} iconID={item.iconID} />
+                                </S.SocialIconLink>
+                            </S.SocialItem>
+                        )})}
                     </S.SocialList>
                     <S.ContactWithMe>Like me on<br />LinkedIn, Telegram, Instagram, VK</S.ContactWithMe>
-                    
                 </FlexWrapper>
             </Container>
         </S.Contacts>

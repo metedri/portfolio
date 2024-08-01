@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { theme } from "../../../styles/Theme"
-import { font } from "../../../styles/Common"
+import { font } from "../../../styles/Fonts"
 
 const Portfolio = styled.section`
     @media ${theme.media.mobile} {

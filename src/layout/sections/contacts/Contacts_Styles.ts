@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { font } from "../../../styles/Common"
+import { font } from "../../../styles/Fonts"
 import { theme } from "../../../styles/Theme"
 
 const Contacts = styled.section`

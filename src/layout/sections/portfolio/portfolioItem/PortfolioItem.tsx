@@ -10,7 +10,7 @@ type PortfolioItemPropsType = {
     coverSrc?: string
 }
 
-export const PortfolioItem = (props: PortfolioItemPropsType) => {
+export const PortfolioItem: React.FC<PortfolioItemPropsType> = (props) => {
     return (
         <S.PortfolioItem>
             <FlexWrapper direction="column" align="center">

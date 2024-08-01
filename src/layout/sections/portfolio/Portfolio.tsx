@@ -9,13 +9,13 @@ import { S } from "./Portfolio_Styles";
 
 export const Portfolio: React.FC = () => {
     return (
-        <S.Portfolio id="section4">
+        <S.Portfolio id="portfolio">
             <Container>
                 <SectionTitle>Portfolio</SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"} gap="100px">
                     {portfolioData.map((item, index) => {
                         return (
-                            <PortfolioItem coverSrc={item.src} linkName={item.name}  />
+                            <PortfolioItem key={index} coverSrc={item.src} linkName={item.name}  />
                         )
                     })}
                 </FlexWrapper>

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const StyledAboutMe = styled.section`
+const AboutMe = styled.section`
 `
 const AboutMeDiscription =styled.p`
     text-align: center;
@@ -10,6 +10,6 @@ const AboutMeDiscription =styled.p`
 `
 
 export const S = {
-    StyledAboutMe,
+    AboutMe,
     AboutMeDiscription
 }
