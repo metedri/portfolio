@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "../../components/Container";
 import { MobileMenu } from "./headerMenu/mobileMenu/MobileMenu";
 import { DesktopMenu } from "./headerMenu/desktopMenu/DesktopMenu";
-import { items } from "../../data/MenuItems";
+import { items } from "../../data/menuItems";
 
 
 export const Header: React.FC = () => {

@@ -1,28 +1,18 @@
 import React from "react";
-import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { FlexWrapper } from "../../../components/FlexWrapper";
-import { Container } from "../../../components/Container";
+import { S } from "./AboutMe_Styles";
 
-export const AboutMe = () => {
+export const AboutMe: React.FC = () => {
     return (
-        <StyledAboutMe id="section2">
+        <S.StyledAboutMe id="section2">
                 <SectionTitle>About me</SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"}>
-                        <AboutMeDiscription>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</AboutMeDiscription>
-                        <AboutMeDiscription>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</AboutMeDiscription>
-                        <AboutMeDiscription>Ready to implement excellent projects  with wonderful people.</AboutMeDiscription>
+                        <S.AboutMeDiscription>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</S.AboutMeDiscription>
+                        <S.AboutMeDiscription>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</S.AboutMeDiscription>
+                        <S.AboutMeDiscription>Ready to implement excellent projects  with wonderful people.</S.AboutMeDiscription>
                 </FlexWrapper>
-        </StyledAboutMe>
+        </S.StyledAboutMe>
     );
 };
 
-const StyledAboutMe = styled.section`
-
-`
-const AboutMeDiscription =styled.p`
-    text-align: center;
-    font-size: 18px;
-    padding: 0 15px 1em;
-    max-width: 490px;
-`

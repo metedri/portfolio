@@ -1,9 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 import progect1 from "../../../../assets/images/progect_1.webp"
 import { FlexWrapper } from "../../../../components/FlexWrapper";
-import { theme } from "../../../../styles/Theme";
-import { font } from "../../../../styles/Common";
+import { S } from "../Portfolio_Styles";
 
 
 type PortfolioItemPropsType = {
@@ -14,36 +12,14 @@ type PortfolioItemPropsType = {
 
 export const PortfolioItem = (props: PortfolioItemPropsType) => {
     return (
-        <StyledPortfolioItem>
+        <S.PortfolioItem>
             <FlexWrapper direction="column" align="center">
-                <ProjectCover src={props.coverSrc || progect1} />
-                <LinkToTheProgect href={props.linkHref || "#"}>{props.linkName}</LinkToTheProgect>
+                <S.ProjectCover src={props.coverSrc || progect1} />
+                <S.LinkToTheProgect href={props.linkHref || "#"}>{props.linkName}</S.LinkToTheProgect>
             </FlexWrapper>
-        </StyledPortfolioItem>
+        </S.PortfolioItem>
     );
 };
 
 
-const StyledPortfolioItem = styled.div`
-
-`
-
-const ProjectCover = styled.img`
-    max-height: 510px;
-    max-width: 940px;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 45px;
-
-    @media ${theme.media.mobile} {
-        margin-bottom: 25px;
-    }
-`
-
-const LinkToTheProgect = styled.a`
-    text-decoration: underline;
-    ${font({weight: 500, color: theme.colors.font, fmax: 16, fmin: 14})}
-
-    
-`
 
