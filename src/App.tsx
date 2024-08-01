@@ -5,6 +5,7 @@ import { AboutMe } from './layout/sections/aboutme/AboutMe';
 import { Skills } from './layout/sections/skills/Skills';
 import { Portfolio } from './layout/sections/portfolio/Portfolio';
 import { Contacts } from './layout/sections/contacts/Contacts';
+import { GoTopBtn } from './components/goTopButton/GoTopButton';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Skills/>
             <Portfolio/>
             <Contacts/>
+            <GoTopBtn/>
         </div>
     );
 }
