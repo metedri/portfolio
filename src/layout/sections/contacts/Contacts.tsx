@@ -7,8 +7,10 @@ import { StyledButton } from "../../../components/StyledButton";
 import { FormMessage } from "./formMessage/FormMessage";
 import { S } from "./Contacts_Styles";
 import {socials} from "../../../data/socials";
+import { useTranslation } from "react-i18next";
 
 export const Contacts: React.FC = () => {
+    const { t } = useTranslation();
     const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -23,11 +25,11 @@ export const Contacts: React.FC = () => {
         <S.Contacts id="contacts">
             <Container>
                 <FlexWrapper direction="column" align="center">
-                    <SectionTitle>Contacts</SectionTitle>
-                    <S.ContactDiscription>Want to know more or just chat? You are welcome!</S.ContactDiscription>
+                    <SectionTitle>{t('contacts.title')}</SectionTitle>
+                    <S.ContactDiscription>{t('contacts.description')}</S.ContactDiscription>
                     <FormMessage isOpen={isModalOpen} onClose={closeModal}>
                     </FormMessage>
-                    <StyledButton onClick={openModal}>Send message</StyledButton>
+                    <StyledButton onClick={openModal}>{t('contacts.formCallBtn')}</StyledButton>
                     <S.SocialList>
                         {socials.map((item, index) => {
                             return(
@@ -38,7 +40,7 @@ export const Contacts: React.FC = () => {
                             </S.SocialItem>
                         )})}
                     </S.SocialList>
-                    <S.ContactWithMe>Like me on<br />LinkedIn, Telegram, Instagram, VK</S.ContactWithMe>
+                    <S.ContactWithMe>{t('contacts.smallText')}<br />LinkedIn, Telegram, Instagram, VK</S.ContactWithMe>
                 </FlexWrapper>
             </Container>
         </S.Contacts>

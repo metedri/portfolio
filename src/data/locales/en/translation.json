@@ -1,0 +1,47 @@
+{
+  "menu": {
+    "home": "Home",
+    "aboutme": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contacts": "Contacts"
+  },
+
+  "main": {
+    "name": "Alla Demina",
+    "h1": "Frontend Developer",
+    "span": "32 years old, Moscow"
+  },
+
+  "aboutMe": {
+    "title": "About Me",
+    "paragraph_one": "Hello, I'm Alla - Frontend developer from Moscow. I am interested in development and everything connected with it.",
+    "paragraph_two": "I am studying Frontend development courses at IT-INCUBATOR.",
+    "paragraph_three": "Ready to implement great projects with wonderful people."
+  },
+
+  "skills": {
+    "title": "Skills",
+    "code": "With HTML, I can structure content and create semantic structure, making web pages more accessible and understandable for search engines and users.",
+    "css": "With CSS, I can create unique and interactive designs that enhance the user experience.",
+    "react": "I develop dynamic and responsive user interfaces using React. This library allows me to create powerful and flexible web applications that are easily scalable.",
+    "typescript": "I use TypeScript to add static typing to JavaScript, making my code more reliable and easier to understand. TypeScript helps me avoid errors and improve the quality of development.",
+    "styledComponents": "With Styled Components, I style components in React, allowing me to write CSS within JavaScript. This makes my work more intuitive and manageable, ensuring a consistent style throughout the application.",
+    "figma": "Figma allows me to collaborate effectively with designers, obtain precise specifications, and implement them in code, making the development process more productive and accurate."
+  },
+
+  "portfolio": {
+    "title": "Portfolio",
+    "progectName1": "Online fashion store - Homepage",
+    "progectName2": "Reebok Store - Concept",
+    "progectName3": "Braun Landing Page - Concept"
+  },
+
+  "contacts": {
+    "title": "Contacts",
+    "description": "Want to know more or just chat? You are welcome!",
+    "smallText": "Like me on",
+    "formCallBtn": "Send message",
+    "sendBtn": "Send message"
+  }
+}

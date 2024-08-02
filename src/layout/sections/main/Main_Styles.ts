@@ -15,7 +15,7 @@ const MainDiscription = styled.div`
 `
 
 const Name = styled.h2`
-    ${font({weight: 700, fmax: 50, fmin: 36})}
+    ${font({weight: 700, fmax: 50, fmin: 24})}
     max-width: 124px;
 `
 

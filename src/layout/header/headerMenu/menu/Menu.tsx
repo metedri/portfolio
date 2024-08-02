@@ -1,6 +1,7 @@
 import React from "react";
 import { MenuItemType } from "../../../../data/menuItems";
 import {S} from "../HeaderMenu_Styles";
+import { useTranslation } from "react-i18next";
 
 
 type MenuItemPropsType = {
@@ -8,11 +9,12 @@ type MenuItemPropsType = {
 }
 
 export const Menu: React.FC<MenuItemPropsType> = (props) => {
+    const { t, i18n } = useTranslation();
     return (
         <ul>
         {props.items.map((item, index) => (
             <li key={index}>
-                <S.Link href={item.href}>{item.eng}</S.Link>
+                <S.Link href={item.href}>{t(`menu.${item.key}`)}</S.Link>
             </li>
         ))}
     </ul>

@@ -7,7 +7,7 @@ const Contacts = styled.section`
 `
 
 const ContactDiscription = styled.p`
-    max-width: 300px;
+    max-width: 320px;
     padding-bottom: 30px;
     text-align: center;
     ${font({weight: 500, lineHeight: 1.4, fmax: 18, fmin: 14})}

@@ -2,6 +2,7 @@ import React, { ElementRef, useRef } from "react";
 import { StyledButton } from "../../../../components/StyledButton";
 import {S} from "../Contacts_Styles";
 import emailjs from '@emailjs/browser';
+import { useTranslation } from "react-i18next";
 
 interface ModalProps {
     isOpen: boolean;
@@ -11,7 +12,7 @@ interface ModalProps {
 
 
 export const FormMessage: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
-    
+    const { t } = useTranslation();
     
     const form = useRef<ElementRef<'form'>>(null);
     
@@ -44,7 +45,7 @@ export const FormMessage: React.FC<ModalProps> = ({ isOpen, onClose, children })
                 <S.Field required placeholder={"email"} name={"email"}/>
                 <S.Field required placeholder={"subject"} name={"subject"}/>
                 <S.Field required placeholder={"message"}as={"textarea"} name={"message"}/>
-                <StyledButton type={"submit"}>Send message</StyledButton>
+                <StyledButton type={"submit"}>{t('contacts.sendBtn')}</StyledButton>
             </S.Form>
         </S.Modal>
     )

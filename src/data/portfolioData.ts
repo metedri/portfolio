@@ -4,21 +4,21 @@ import progect3 from "../assets/images/progect_3.webp"
 
 
 export type PortfolioDataType = {
-    name: string
+    key: string
     src: string
 }
 
 export const portfolioData: PortfolioDataType[] = [
     {
-        name: "Online fashion store - Homepage",
+        key: "progectName1",
         src: progect1,
     },
     {
-        name: "Reebok Store - Concept",
+        key: "progectName2",
         src: progect2,
     },
     {
-        name: "Braun Landing Page - Concept",
+        key: "progectName3",
         src: progect3,
     }
 ]

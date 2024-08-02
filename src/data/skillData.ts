@@ -1,38 +1,38 @@
 export type SkillDataType = {
+    key: string;
     iconID: string;
     title: string;
-    descriptionEng: string;
 };
 
 export const skills: SkillDataType[] = [
     {
+        key: "code",
         iconID: "code",
         title: "HTML5",
-        descriptionEng: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
     },
     {
+        key: "css",
         iconID: "css",
         title: "CSS3",
-        descriptionEng: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
     },
     {
+        key: "react",
         iconID: "react",
         title: "React",
-        descriptionEng: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
     },
     {
+        key: "typescript",
         iconID: "typescript",
         title: "Typescript",
-        descriptionEng: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
     },
     {
+        key: "styledComponents",
         iconID: "styled-components",
         title: "Styled-components",
-        descriptionEng: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
     },
     {
+        key: "figma",
         iconID: "figma",
         title: "Figma",
-        descriptionEng: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
     }
 ]

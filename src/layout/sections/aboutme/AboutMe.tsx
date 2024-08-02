@@ -2,15 +2,17 @@ import React from "react";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { S } from "./AboutMe_Styles";
+import { useTranslation } from "react-i18next";
 
 export const AboutMe: React.FC = () => {
+    const { t } = useTranslation();
     return (
         <S.AboutMe id="aboutme">
-                <SectionTitle>About me</SectionTitle>
+                <SectionTitle>{t('aboutMe.title')}</SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"}>
-                        <S.AboutMeDiscription>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</S.AboutMeDiscription>
-                        <S.AboutMeDiscription>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</S.AboutMeDiscription>
-                        <S.AboutMeDiscription>Ready to implement excellent projects  with wonderful people.</S.AboutMeDiscription>
+                        <S.AboutMeDiscription>{t('aboutMe.paragraph_one')}</S.AboutMeDiscription>
+                        <S.AboutMeDiscription>{t('aboutMe.paragraph_two')}</S.AboutMeDiscription>
+                        <S.AboutMeDiscription>{t('aboutMe.paragraph_three')}</S.AboutMeDiscription>
                 </FlexWrapper>
         </S.AboutMe>
     );
