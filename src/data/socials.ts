@@ -10,7 +10,7 @@ export const socials: SocialsDataType[] = [
     },
     {
         iconID: "telegram",
-        href: "#",
+        href: "https://t.me/metedri",
     },
     {
         iconID: "instagram",
@@ -18,6 +18,6 @@ export const socials: SocialsDataType[] = [
     },
     {
         iconID: "vk",
-        href: "#",
+        href: "https://vk.com/allaplp",
     },
 ]
