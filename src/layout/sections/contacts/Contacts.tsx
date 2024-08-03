@@ -34,7 +34,7 @@ export const Contacts: React.FC = () => {
                         {socials.map((item, index) => {
                             return(
                             <S.SocialItem key={index}>
-                                <S.SocialIconLink href={item.href}>
+                                <S.SocialIconLink target="_blank" href={item.href}>
                                     <Icon height={"40"} width={"40"} iconID={item.iconID} />
                                 </S.SocialIconLink>
                             </S.SocialItem>

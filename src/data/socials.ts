@@ -6,7 +6,7 @@ export type SocialsDataType = {
 export const socials: SocialsDataType[] = [
     {
         iconID: "linkedin",
-        href: "#",
+        href: "https://www.linkedin.com/",
     },
     {
         iconID: "telegram",
@@ -14,7 +14,7 @@ export const socials: SocialsDataType[] = [
     },
     {
         iconID: "instagram",
-        href: "#",
+        href: "https://www.instagram.com/",
     },
     {
         iconID: "vk",
