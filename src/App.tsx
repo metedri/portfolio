@@ -26,5 +26,4 @@ export default App;
 
 
 
-// GoTopBtn на мобилках?
 
