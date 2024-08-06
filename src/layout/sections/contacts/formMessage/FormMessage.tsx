@@ -1,4 +1,5 @@
 import React, { ElementRef, useRef } from "react";
+import ReactDOM from "react-dom";
 import { StyledButton } from "../../../../components/StyledButton";
 import {S} from "../Contacts_Styles";
 import emailjs from '@emailjs/browser';
@@ -30,14 +31,17 @@ export const FormMessage: React.FC<ModalProps> = ({ isOpen, onClose, children })
             (error) => {
             console.log('FAILED...', error.text);
         });
-        e.target.reset()
-        onClose()
+        e.target.reset();
+        onClose();
     };
 
     if (!isOpen) return null;
 
+    const modalRoot = document.getElementById('modal-root');
+    if (!modalRoot) return null;
 
-    return (
+    return ReactDOM.createPortal(
+        <S.ModalOverlay onClick={onClose}>
         <S.Modal onClick={onClose}>
             <S.CloseButton onClick={onClose}>X</S.CloseButton>
             <S.Form onClick={(e) => e.stopPropagation()} ref={form} onSubmit={sendEmail}>
@@ -48,6 +52,8 @@ export const FormMessage: React.FC<ModalProps> = ({ isOpen, onClose, children })
                 <StyledButton type={"submit"}>{t('contacts.sendBtn')}</StyledButton>
             </S.Form>
         </S.Modal>
+        </S.ModalOverlay>,
+        modalRoot
     )
 }
 

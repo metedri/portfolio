@@ -40,7 +40,16 @@ position: relative;
     border-radius: 10px;
     transform: translateY(-5px) translateX(-5px);
     position: absolute;
-}  
+}
+
+&:hover{
+    svg {
+        transform: translateY(-5px);
+    }
+    &::before {
+        border-bottom: 5px solid ${theme.colors.font};
+    }
+}
 `
 
 const ContactWithMe = styled.p`
@@ -50,6 +59,16 @@ const ContactWithMe = styled.p`
 
 // --- Modal window
 
+const ModalOverlay = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+`;
+
+
 const Modal = styled.div`
     position: fixed;
     top: 50%;
@@ -57,6 +76,7 @@ const Modal = styled.div`
     transform: translate(-50%, -50%);
     width: 600px;
     height: 400px;
+    opacity: 1;
     background-color: ${theme.colors.secondaryBg};
     border: 1px solid ${theme.colors.fontLite};
     border-radius: 15px;
@@ -64,6 +84,7 @@ const Modal = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 999999;
+
 
     @media  ${theme.media.mobile} {
         top: 0;
@@ -126,6 +147,7 @@ export const S = {
     SocialItem,
     SocialIconLink,
     ContactWithMe,
+    ModalOverlay,
     Modal,
     CloseButton,
     Form,
