@@ -14,7 +14,10 @@
   },
 
   "aboutMe": {
-    "title": "About Me"
+    "title": "About Me",
+    "paragraph_one": "Hello, I'm Alla - Frontend developer from Moscow. I am interested in development and everything connected with it.",
+    "paragraph_two": "A frontend developer with over a year of experience in creating SPA and SSR applications, working with TypeScript, React, Redux, and Next.js.",
+    "paragraph_three": "Ready to implement great projects with wonderful people."
   },
 
   "skills": {
@@ -22,10 +25,7 @@
   },
 
   "portfolio": {
-    "title": "Portfolio",
-    "progectName1": "Pictorial",
-    "progectName2": "Reebok Store - Concept",
-    "progectName3": "Braun Landing Page - Concept"
+    "title": "Portfolio"
   },
 
   "contacts": {
