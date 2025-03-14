@@ -40,11 +40,6 @@ export const Contacts: React.FC = () => {
               )
             })}
           </S.SocialList>
-          <S.ContactWithMe>
-            {t('contacts.smallText')}
-            <br />
-            LinkedIn, Telegram, Instagram, VK
-          </S.ContactWithMe>
         </FlexWrapper>
       </Container>
     </S.Contacts>
